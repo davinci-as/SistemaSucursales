@@ -1,0 +1,26 @@
+@startuml
+class vigilancia.sistema.EntidadBancaria {
+- int codigo
+- String nombre
+- String domicilio
+- ArrayList<Sucursal> sucursales
++ int getCodigo()
++ void setCodigo(int)
++ String getNombre()
++ void setNombre(String)
++ String getDomicilio()
++ void setDomicilio(String)
++ ArrayList<Sucursal> getSucursales()
++ void addSucursal(Sucursal)
++ void addSucursal(int,String)
++ void removeSucursal(int)
+}
+
+
+class vigilancia.sistema.Sucursal {
+}
+class Main {
++ {static} void main(String[])
+}
+
+@enduml
