@@ -45,7 +45,7 @@ public class EntidadBancaria {
     }
 
     public void addSucursal(int codigo, String domicilio) {
-        Sucursal sucursal = new Sucursal();
+        Sucursal sucursal = new Sucursal(this, codigo, domicilio);
         // TODO: Agregar campos de codigo y domicilio
         this.sucursales.add(sucursal);
     }

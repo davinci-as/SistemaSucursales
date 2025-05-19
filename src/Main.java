@@ -10,10 +10,10 @@ public class Main {
         bancoDV.setDomicilio("Calle 123, BA");
         bancoDV.setCodigo(192);
         //Manera 1
-        Sucursal sucursal = new Sucursal();
+        Sucursal sucursal = new Sucursal(bancoDV);
         bancoDV.addSucursal(sucursal);
         //Manera 2
-        bancoDV.addSucursal(new Sucursal());
+        bancoDV.addSucursal(new Sucursal(bancoDV));
         //Manera 3
         bancoDV.addSucursal(190, "Calle 456, BA");
 

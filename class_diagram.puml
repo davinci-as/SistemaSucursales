@@ -14,11 +14,25 @@ class vigilancia.sistema.EntidadBancaria {
 + void addSucursal(Sucursal)
 + void addSucursal(int,String)
 + void removeSucursal(int)
++ void removeSucursal(Sucursal)
 }
 
 
 class vigilancia.sistema.Sucursal {
+- EntidadBancaria entidad
+- int codigo
+- int cantidadEmpleados
+- String domicilio
++ EntidadBancaria getEntidad()
+- void setEntidad(EntidadBancaria)
++ String getDomicilio()
++ void setDomicilio(String)
++ int getCodigo()
++ void setCodigo(int)
++ int getCantidadEmpleados()
 }
+
+
 class Main {
 + {static} void main(String[])
 }
