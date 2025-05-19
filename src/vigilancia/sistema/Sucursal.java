@@ -11,6 +11,8 @@ public class Sucursal {
     }
 
     public Sucursal(EntidadBancaria entidad, int codigo, String domicilio) {
+        this.setCodigo(codigo);
+        this.setDomicilio(domicilio);
         this.setEntidad(entidad);
     }
 
