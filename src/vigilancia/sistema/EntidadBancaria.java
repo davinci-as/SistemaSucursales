@@ -8,7 +8,7 @@ public class EntidadBancaria {
     private String domicilio;
     private ArrayList<Sucursal> sucursales;
 
-    EntidadBancaria() {
+    public EntidadBancaria() {
         this.sucursales = new ArrayList<>();
     }
 
