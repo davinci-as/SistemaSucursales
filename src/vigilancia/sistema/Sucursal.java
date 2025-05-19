@@ -1,19 +1,24 @@
 package vigilancia.sistema;
 
+import java.util.ArrayList;
+
 public class Sucursal {
     private EntidadBancaria entidad;
     private int codigo;
     private int cantidadEmpleados = 0;
     private String domicilio;
+    private ArrayList<Contrato> contratosVigentes;
 
     public Sucursal(EntidadBancaria entidad) {
         this.setEntidad(entidad);
+        this.contratosVigentes = new ArrayList<>();
     }
 
     public Sucursal(EntidadBancaria entidad, int codigo, String domicilio) {
         this.setCodigo(codigo);
         this.setDomicilio(domicilio);
         this.setEntidad(entidad);
+        this.contratosVigentes = new ArrayList<>();
     }
 
     public EntidadBancaria getEntidad() {
@@ -42,5 +47,13 @@ public class Sucursal {
 
     public int getCantidadEmpleados() {
         return cantidadEmpleados;
+    }
+
+    public ArrayList<Contrato> getContratosVigentes() {
+        return contratosVigentes;
+    }
+
+    public void addContrato(Contrato contrato) {
+        this.contratosVigentes.add(contrato);
     }
 }
