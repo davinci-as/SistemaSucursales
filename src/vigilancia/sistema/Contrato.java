@@ -7,12 +7,23 @@ public class Contrato {
     private Date fechaContratacion;
     private Date fechaCierre;
     private boolean conArma = false;
+    private Vigilante vigilante;
 
     public Contrato() {}
+
+    public Contrato(Vigilante vigilante) {
+        this.setVigilante(vigilante);
+    }
 
     public Contrato(Date fechaContratacion, Date fechaCierre) {
         this.setFechaContratacion(fechaContratacion);
         this.setFechaCierre(fechaCierre);
+    }
+
+    public Contrato(Vigilante vigilante, Date fechaContratacion, Date fechaCierre) {
+        this.setFechaContratacion(fechaContratacion);
+        this.setFechaCierre(fechaCierre);
+        this.setVigilante(vigilante);
     }
 
     public boolean isActivo() {
@@ -41,5 +52,13 @@ public class Contrato {
 
     public boolean isConArma() {
         return conArma;
+    }
+
+    public Vigilante getVigilante() {
+        return vigilante;
+    }
+
+    public void setVigilante(Vigilante vigilante) {
+        this.vigilante = vigilante;
     }
 }

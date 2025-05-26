@@ -1,7 +1,9 @@
 import vigilancia.sistema.Contrato;
 import vigilancia.sistema.EntidadBancaria;
 import vigilancia.sistema.Sucursal;
+import vigilancia.sistema.Vigilante;
 
+import javax.naming.ldap.Control;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -19,11 +21,26 @@ public class Main {
         sucursal.setDomicilio("Calle 879, BA");
         sucursal.setCodigo(879);
 
-        // Creo contrato
+        // creo vigilante
+        Vigilante juanPablo = new Vigilante();
+        juanPablo.setNombre("Juan Pablo");
+
+        Vigilante mario = new Vigilante(2, 40, "Mario");
+
+        // Creo contrato de Mario
+        Contrato contratoMario = new Contrato(
+            mario,
+            new Date(2025, 7, 1),
+            new Date(2025, 11, 31)
+        );
+        sucursal.addContrato(contratoMario);
+
+        // Creo contrato de Juan Pablo
         Contrato nuevoContrato = new Contrato();
         sucursal.addContrato(nuevoContrato);
         nuevoContrato.setFechaContratacion(new Date(2025, 7, 1));
         nuevoContrato.setFechaCierre(new Date(2025, 11, 31));
+        nuevoContrato.setVigilante(juanPablo);
 
         //Manera 2
         bancoDV.addSucursal(new Sucursal(bancoDV));
