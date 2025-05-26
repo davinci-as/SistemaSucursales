@@ -33,6 +33,7 @@ class vigilancia.sistema.Sucursal {
 + int getCantidadEmpleados()
 + ArrayList<Contrato> getContratosVigentes()
 + void addContrato(Contrato)
++ ArrayList<Vigilante> getVigilantes()
 }
 
 

@@ -33,6 +33,7 @@ public class Main {
             new Date(2025, 7, 1),
             new Date(2025, 11, 31)
         );
+        contratoMario.setActivo(true);
         sucursal.addContrato(contratoMario);
 
         // Creo contrato de Juan Pablo
@@ -41,6 +42,7 @@ public class Main {
         nuevoContrato.setFechaContratacion(new Date(2025, 7, 1));
         nuevoContrato.setFechaCierre(new Date(2025, 11, 31));
         nuevoContrato.setVigilante(juanPablo);
+        nuevoContrato.setActivo(false);
 
         //Manera 2
         bancoDV.addSucursal(new Sucursal(bancoDV));
@@ -52,7 +54,7 @@ public class Main {
         //Manera 3
         bancoDV.addSucursal(190, "Calle 456, BA");
 
-
+        ArrayList<Vigilante> vigilantesDeSucursal = sucursal.getVigilantes();
 
         bancoDV.getSucursales();
     }
