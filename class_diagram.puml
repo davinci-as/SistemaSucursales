@@ -23,6 +23,7 @@ class vigilancia.sistema.Sucursal {
 - int codigo
 - int cantidadEmpleados
 - String domicilio
+- ArrayList<Contrato> contratosVigentes
 + EntidadBancaria getEntidad()
 - void setEntidad(EntidadBancaria)
 + String getDomicilio()
@@ -30,6 +31,23 @@ class vigilancia.sistema.Sucursal {
 + int getCodigo()
 + void setCodigo(int)
 + int getCantidadEmpleados()
++ ArrayList<Contrato> getContratosVigentes()
++ void addContrato(Contrato)
+}
+
+
+class vigilancia.sistema.Contrato {
+- boolean activo
+- Date fechaContratacion
+- Date fechaCierre
+- boolean conArma
++ boolean isActivo()
++ void setActivo(boolean)
++ Date getFechaContratacion()
++ void setFechaContratacion(Date)
++ Date getFechaCierre()
++ void setFechaCierre(Date)
++ boolean isConArma()
 }
 
 
