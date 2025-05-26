@@ -11,50 +11,45 @@ import java.util.Date;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
         EntidadBancaria bancoDV = new EntidadBancaria();
         bancoDV.setNombre("Banco DV");
         bancoDV.setDomicilio("Calle 123, BA");
         bancoDV.setCodigo(192);
-        //Manera 1
-        Sucursal sucursal = new Sucursal(bancoDV);
-        bancoDV.addSucursal(sucursal);
-        sucursal.setDomicilio("Calle 879, BA");
-        sucursal.setCodigo(879);
 
-        // creo vigilante
-        Vigilante juanPablo = new Vigilante();
-        juanPablo.setNombre("Juan Pablo");
+        // Carga de vigilantes
+        ArrayList<Vigilante> vigilantes = new ArrayList<>();
+        vigilantes.add(new Vigilante(0, 35, "Juan Pablo"));
+        vigilantes.add(new Vigilante(1, 40, "Mario"));
 
-        Vigilante mario = new Vigilante(2, 40, "Mario");
+        // Carga de las sucursales
+        ArrayList<Sucursal> sucursalesDB = new ArrayList<>();
+        sucursalesDB.add(new Sucursal(bancoDV, 879, "Calle 879, BA"));
+        sucursalesDB.add(new Sucursal(bancoDV, 123, "Calle 1122, BA"));
+        sucursalesDB.add(new Sucursal(bancoDV, 190, "Calle 456, BA"));
 
-        // Creo contrato de Mario
-        Contrato contratoMario = new Contrato(
-            mario,
-            new Date(2025, 7, 1),
-            new Date(2025, 11, 31)
-        );
-        contratoMario.setActivo(true);
-        sucursal.addContrato(contratoMario);
+        // Carga de los contratos
+        ArrayList<Contrato> contratos = new ArrayList<>();
+        contratos.add(new Contrato(
+                vigilantes.get(1),
+                new Date(2025, 7, 1),
+                new Date(2025, 11, 31)
+        ));
+        contratos.add(new Contrato(
+                vigilantes.get(0),
+                new Date(2025, 7, 1),
+                new Date(2025, 11, 31)
+        ));
 
-        // Creo contrato de Juan Pablo
-        Contrato nuevoContrato = new Contrato();
-        sucursal.addContrato(nuevoContrato);
-        nuevoContrato.setFechaContratacion(new Date(2025, 7, 1));
-        nuevoContrato.setFechaCierre(new Date(2025, 11, 31));
-        nuevoContrato.setVigilante(juanPablo);
-        nuevoContrato.setActivo(false);
-
-        //Manera 2
-        bancoDV.addSucursal(new Sucursal(bancoDV));
-        ArrayList<Sucursal> sucursales = bancoDV.getSucursales();
-        Sucursal sucursal1 = sucursales.get(1);
-        sucursal1.setDomicilio("Calle 1122, BA");
-        sucursal1.setCodigo(123);
+        // Dar de alta los contratos
+        contratos.get(0).setActivo(true);
+        sucursalesDB.get(0).addContrato(contratos.get(0));
+        contratos.get(1).setActivo(true);
+        sucursalesDB.get(0).addContrato(contratos.get(1));
 
         //Manera 3
-        bancoDV.addSucursal(190, "Calle 456, BA");
 
-        ArrayList<Vigilante> vigilantesDeSucursal = sucursal.getVigilantes();
+        ArrayList<Vigilante> vigilantesDeSucursal = sucursalesDB.get(0).getVigilantes();
 
         bancoDV.getSucursales();
     }
