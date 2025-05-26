@@ -41,6 +41,7 @@ class vigilancia.sistema.Contrato {
 - Date fechaContratacion
 - Date fechaCierre
 - boolean conArma
+- Vigilante vigilante
 + boolean isActivo()
 + void setActivo(boolean)
 + Date getFechaContratacion()
@@ -48,6 +49,21 @@ class vigilancia.sistema.Contrato {
 + Date getFechaCierre()
 + void setFechaCierre(Date)
 + boolean isConArma()
++ Vigilante getVigilante()
++ void setVigilante(Vigilante)
+}
+
+
+class vigilancia.sistema.Vigilante {
+- int codigo
+- int edad
+- String nombre
++ int getCodigo()
++ void setCodigo(int)
++ int getEdad()
++ void setEdad(int)
++ String getNombre()
++ void setNombre(String)
 }
 
 
