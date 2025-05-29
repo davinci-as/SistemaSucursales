@@ -11,3 +11,4 @@
 - [x] Vincular al vigilante con el contrato
 - [x] Dar de alta contratos para ver vigilantes de la sucursal
 - [ ] Buscar el indice de la sucursal a borrar
+- [ ] Vincular sucursales con banco
