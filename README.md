@@ -11,6 +11,7 @@
 - [x] Vincular al vigilante con el contrato
 - [x] Dar de alta contratos para ver vigilantes de la sucursal
 - [ ] Buscar el indice de la sucursal a borrar
+- [ ] Vincular sucursales con banco
 
 ## TODO Torneo DV
 - [ ] Agregar estructura de clase de Player
@@ -25,4 +26,3 @@
 - [ ] Crear 11 jugadores y asignar a un equipo
 - [ ] Crear 11 jugadores y asignar a un equipo
 - [ ] Crear un match entre dos equipos
-
