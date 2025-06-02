@@ -1,20 +1,14 @@
 @startuml
-class vigilancia.sistema.EntidadBancaria {
+class vigilancia.sistema.Vigilante {
 - int codigo
+- int edad
 - String nombre
-- String domicilio
-- ArrayList<Sucursal> sucursales
 + int getCodigo()
 + void setCodigo(int)
++ int getEdad()
++ void setEdad(int)
 + String getNombre()
 + void setNombre(String)
-+ String getDomicilio()
-+ void setDomicilio(String)
-+ ArrayList<Sucursal> getSucursales()
-+ void addSucursal(Sucursal)
-+ void addSucursal(int,String)
-+ void removeSucursal(int)
-+ void removeSucursal(Sucursal)
 }
 
 
@@ -37,6 +31,29 @@ class vigilancia.sistema.Sucursal {
 }
 
 
+class vigilancia.sistema.EntidadBancaria {
+- int codigo
+- String nombre
+- String domicilio
+- ArrayList<Sucursal> sucursales
++ int getCodigo()
++ void setCodigo(int)
++ String getNombre()
++ void setNombre(String)
++ String getDomicilio()
++ void setDomicilio(String)
++ ArrayList<Sucursal> getSucursales()
++ void addSucursal(Sucursal)
++ void addSucursal(int,String)
++ void removeSucursal(int)
++ void removeSucursal(Sucursal)
+}
+
+
+class Main {
++ {static} void main(String[])
+}
+
 class vigilancia.sistema.Contrato {
 - boolean activo
 - Date fechaContratacion
@@ -54,22 +71,5 @@ class vigilancia.sistema.Contrato {
 + void setVigilante(Vigilante)
 }
 
-
-class vigilancia.sistema.Vigilante {
-- int codigo
-- int edad
-- String nombre
-+ int getCodigo()
-+ void setCodigo(int)
-+ int getEdad()
-+ void setEdad(int)
-+ String getNombre()
-+ void setNombre(String)
-}
-
-
-class Main {
-+ {static} void main(String[])
-}
 
 @enduml
