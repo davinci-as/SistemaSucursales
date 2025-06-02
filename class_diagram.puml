@@ -31,6 +31,22 @@ class vigilancia.sistema.Sucursal {
 }
 
 
+class dv.torneo.Player {
+- int number
+- String name
+- String position
+- int goalCounter
++ int getNumber()
++ void setNumber(int)
++ String getName()
++ void setName(String)
++ String getPosition()
++ void setPosition(String)
++ int getGoalCounter()
++ void setGoalCounter(int)
+}
+
+
 class vigilancia.sistema.EntidadBancaria {
 - int codigo
 - String nombre
