@@ -17,6 +17,11 @@ public class Main {
         bancoDV.setDomicilio("Calle 123, BA");
         bancoDV.setCodigo(192);
 
+        EntidadBancaria bancoSM = new EntidadBancaria();
+        bancoSM.setNombre("Banco SM");
+        bancoSM.setDomicilio("Calle 456, BA");
+        bancoSM.setCodigo(191);
+
         // Carga de vigilantes
         ArrayList<Vigilante> vigilantes = new ArrayList<>();
         vigilantes.add(new Vigilante(0, 35, "Juan Pablo"));
@@ -27,6 +32,9 @@ public class Main {
         sucursalesDB.add(new Sucursal(bancoDV, 879, "Calle 879, BA"));
         sucursalesDB.add(new Sucursal(bancoDV, 123, "Calle 1122, BA"));
         sucursalesDB.add(new Sucursal(bancoDV, 190, "Calle 456, BA"));
+
+        ArrayList<Sucursal> sucursalesSM = new ArrayList<>();
+        sucursalesSM.add(new Sucursal(bancoSM, 199, "Calle 14A, BA"));
 
         // Carga de los contratos
         ArrayList<Contrato> contratos = new ArrayList<>();
@@ -51,6 +59,7 @@ public class Main {
 
         ArrayList<Vigilante> vigilantesDeSucursal = sucursalesDB.get(0).getVigilantes();
 
-        bancoDV.getSucursales();
+        bancoDV.getSucursales(); //TODO: vincular sucursales con banco
+        bancoSM.getSucursales();
     }
 }
