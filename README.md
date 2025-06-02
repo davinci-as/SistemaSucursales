@@ -14,7 +14,7 @@
 - [ ] Vincular sucursales con banco
 
 ## TODO Torneo DV
-- [ ] Agregar estructura de clase de Player
+- [x] Agregar estructura de clase de Player
 - [ ] Agregar estructura de clase de Team sin Player
 - [ ] Establecer la relación entre Team y Player
 - [ ] Agregar estructura de clase de Match sin Team
