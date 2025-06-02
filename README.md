@@ -13,6 +13,8 @@
 - [ ] Buscar el indice de la sucursal a borrar
 - [ ] Vincular sucursales con banco
 
+![class_diagram_tournament.png](class_diagram_tournament.png)
+
 ## TODO Torneo DV
 - [x] Agregar estructura de clase de Player
 - [ ] Agregar estructura de clase de Team sin Player
