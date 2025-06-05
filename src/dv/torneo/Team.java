@@ -1,10 +1,10 @@
 class Team {
-    private String nombre;
+    private String name;
 
     public String getName() {
-        return this.nombre;
+        return this.name;
     }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 }
