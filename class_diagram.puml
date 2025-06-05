@@ -46,6 +46,12 @@ class dv.torneo.Player {
 + void setGoalCounter(int)
 }
 
+class dv.torneo.Team {
+- String name
++ String getName()
++ void setName(String)
+}
+
 
 class vigilancia.sistema.EntidadBancaria {
 - int codigo
