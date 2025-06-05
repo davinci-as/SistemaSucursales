@@ -13,6 +13,8 @@
 - [ ] Buscar el indice de la sucursal a borrar
 - [ ] Vincular sucursales con banco
 
+# Sistema de gestión del Torneo Davinci
+
 ![class_diagram_tournament.png](class_diagram_tournament.png)
 
 ## TODO Torneo DV
