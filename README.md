@@ -19,7 +19,7 @@
 
 ## TODO Torneo DV
 - [x] Agregar estructura de clase de Player
-- [ ] Agregar estructura de clase de Team sin Player
+- [x] Agregar estructura de clase de Team sin Player
 - [ ] Establecer la relación entre Team y Player
 - [ ] Agregar estructura de clase de Match sin Team
 - [ ] Actualizar estructura de clase Match con Team
