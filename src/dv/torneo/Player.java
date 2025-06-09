@@ -6,6 +6,13 @@ public class Player {
     private String position;
     private int goalCounter;
 
+    public Player(int number, String name, String position,int goalCounter) {
+        this.setNumber(number);
+        this.setName(name);
+        this.setPosition(position);
+        this.setGoalCounter(goalCounter);
+    }
+
     public int getNumber() {
         return number;
     }
@@ -37,4 +44,5 @@ public class Player {
     public void setGoalCounter(int goalCounter) {
         this.goalCounter = goalCounter;
     }
+
 }

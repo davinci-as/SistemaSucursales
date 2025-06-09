@@ -27,6 +27,6 @@
 - [x] Agregar estructura de clase de Season
 - [x] Establecer la relación entre Team y Season
 - [x] Establecer la relación entre Season y Match
-- [x] Crear 11 jugadores y asignar a un equipo
-- [x] Crear 11 jugadores y asignar a un equipo
+- [ ] Crear 11 jugadores y asignar a un equipo
+- [ ] Crear 11 jugadores y asignar a un equipo
 - [ ] Crear un match entre dos equipos
