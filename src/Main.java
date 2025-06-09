@@ -1,3 +1,5 @@
+import dv.torneo.Player;
+import dv.torneo.Season;
 import vigilancia.sistema.Contrato;
 import vigilancia.sistema.EntidadBancaria;
 import vigilancia.sistema.Sucursal;
@@ -61,5 +63,40 @@ public class Main {
 
         bancoDV.getSucursales(); //TODO: vincular sucursales con banco
         bancoSM.getSucursales();
+
+
+        //Comienzo del Torneo
+        Date fechaInicio = new Date(125, 5, 4);
+        Date fechaCierre = new Date(125, 8, 1);
+
+        //Creacion de Torneo
+        Season season = new Season("Temporada 2025-26",fechaInicio,fechaCierre);
+
+        //Creacion de Jugadores
+        ArrayList<Player> riverPlate = new ArrayList<>();
+        riverPlate.add(new Player(1,"Franco Armani","Arquero",0));
+        riverPlate.add(new Player(2,"Paulo Diaz","Defensor",0));
+        riverPlate.add(new Player(3,"Milton Casco","Defensor",0));
+        riverPlate.add(new Player(4,"Gonzalo Montiel","Defensor",0));
+        riverPlate.add(new Player(5,"Enzo Perez","Defensor",0));
+        riverPlate.add(new Player(6,"German Pezzella","Mediocampista",0));
+        riverPlate.add(new Player(7,"Nacho Fernandez","Mediocampista",0));
+        riverPlate.add(new Player(8,"Exequiel Palacios","Mediocampista",0));
+        riverPlate.add(new Player(9,"Sebastian Driussi","Delantero",0));
+        riverPlate.add(new Player(10,"Franco Mastantuono","Delantero",0));
+        riverPlate.add(new Player(11,"Facundo Colidio","Delantero",0));
+
+        ArrayList<Player> argentina = new ArrayList<>();
+        argentina.add(new Player(1,"Emiliano Martinez","Arquero",0));
+        argentina.add(new Player(2,"Nicolas Otamendi","Defensor",0));
+        argentina.add(new Player(3,"Nicolas Tagliafico","Defensor",0));
+        argentina.add(new Player(4,"Nahuel Molina","Defensor",0));
+        argentina.add(new Player(5,"Enzo Fernandez","Defensor",0));
+        argentina.add(new Player(6,"Cuti Romero","Mediocampista",0));
+        argentina.add(new Player(7,"Alexis Macallister","Mediocampista",0));
+        argentina.add(new Player(8,"Rodrigo DePaul","Mediocampista",0));
+        argentina.add(new Player(9,"Julian Alvarez","Delantero",0));
+        argentina.add(new Player(10,"Lionel Messi","Delantero",0));
+        argentina.add(new Player(11,"Nicolas Dominguez","Delantero",0));
     }
 }
