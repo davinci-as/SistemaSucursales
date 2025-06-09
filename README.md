@@ -29,4 +29,4 @@
 - [x] Establecer la relación entre Season y Match
 - [ ] Crear 11 jugadores y asignar a un equipo
 - [ ] Crear 11 jugadores y asignar a un equipo
-- [ ] Crear un match entre dos equipos
+- [x] Crear un match entre dos equipos
