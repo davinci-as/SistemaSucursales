@@ -1,5 +1,7 @@
+import dv.torneo.Match;
 import dv.torneo.Player;
 import dv.torneo.Season;
+import dv.torneo.Team;
 import vigilancia.sistema.Contrato;
 import vigilancia.sistema.EntidadBancaria;
 import vigilancia.sistema.Sucursal;
@@ -98,5 +100,12 @@ public class Main {
         argentina.add(new Player(9,"Julian Alvarez","Delantero",0));
         argentina.add(new Player(10,"Lionel Messi","Delantero",0));
         argentina.add(new Player(11,"Nicolas Dominguez","Delantero",0));
+
+        //Creacion de Equipos
+        Team teamA = new Team("River Plate", riverPlate);
+        Team teamB = new Team("Argentina", argentina);
+
+        Date partido1 = new Date(125,5, 8);
+        Match match1 = new Match("Monumental",partido1,teamA,teamB,2,3);
     }
 }
