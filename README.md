@@ -32,5 +32,5 @@
 - [x] Crear un match entre dos equipos
 - [x] Agregar nuevos jugadores desde la clase Team
 - [x] Modificar el resultado del equipo local
-- [ ] Modificar el resultado del equipo visitante
+- [x] Modificar el resultado del equipo visitante
 - [ ] Obtener al equipo que gana el Match

@@ -120,6 +120,8 @@ public class Main {
         match1.setVisitantGoalCounter(0);
         match1.localMakeGoal();
         match1.localMakeGoal();
+        match1.visitantMakeGoal();
         match1.localMakeGoal();
+        match1.visitantMakeGoal();
     }
 }

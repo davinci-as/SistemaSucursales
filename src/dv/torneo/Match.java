@@ -60,4 +60,8 @@ public class Match {
         this.localGoalCounter++;
         //this.setLocalGoalCounter(this.getLocalGoalCounter() + 1);
     }
+
+    public void visitantMakeGoal() {
+        this.visitantGoalCounter++;
+    }
 }
