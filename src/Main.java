@@ -8,6 +8,7 @@ import vigilancia.sistema.Sucursal;
 import vigilancia.sistema.Vigilante;
 
 import javax.naming.ldap.Control;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -101,11 +102,19 @@ public class Main {
         argentina.add(new Player(10,"Lionel Messi","Delantero",0));
         argentina.add(new Player(11,"Nicolas Dominguez","Delantero",0));
 
-        //Creacion de Equipos
-        Team teamA = new Team("River Plate", riverPlate);
-        Team teamB = new Team("Argentina", argentina);
+        ArrayList<Team> teams = new ArrayList<>();
+        teams.add(new Team("River Plate"));
+        teams.add(new Team("Argentina"));
+
+        for (Player p : riverPlate) {
+            teams.get(0).addPlayer(p);
+        }
+
+        for(Player p : argentina) {
+            teams.get(1).addPlayer(p);
+        }
 
         Date partido1 = new Date(125,5, 8);
-        Match match1 = new Match("Monumental",partido1,teamA,teamB,2,3);
+        Match match1 = new Match("Monumental",partido1,teams.get(0),teams.get(1),2,3);
     }
 }
