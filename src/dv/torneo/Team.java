@@ -6,6 +6,11 @@ public class Team {
     private String name;
     private ArrayList<Player> players;
 
+    public Team(String name){
+        this.setName(name);
+        this.setPlayers(new ArrayList<>());
+    }
+
     public Team (String name, ArrayList<Player>players) {
         this.setName(name);
         this.setPlayers(players);
@@ -19,4 +24,8 @@ public class Team {
 
     public void setPlayers(ArrayList<Player> players) {
         this.players = players; }
+
+    public void addPlayer(Player player) {
+        this.players.add(player);
+    }
 }
