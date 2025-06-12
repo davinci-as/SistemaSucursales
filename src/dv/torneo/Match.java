@@ -19,6 +19,13 @@ public class Match {
         this.setVisitantGoalCounter(visitantGoalCounter);
     }
 
+    public Match(String location, Date matchDate, Team localTeam, Team visitantTeam) {
+        this.setLocation(location);
+        this.setDate(matchDate);
+        this.setLocalTeam(localTeam);
+        this.setVisitantTeam(visitantTeam);
+    }
+
     public String getLocation() {return location; }
 
     public void setLocation(String location) {this.location = location; }
@@ -47,5 +54,10 @@ public class Match {
 
     public void makeGoal (Player player, Team team){
         System.out.println("El jugador " + player + "del equipo " + team + "metio un gol." );
+    }
+
+    public void localMakeGoal() {
+        this.localGoalCounter++;
+        //this.setLocalGoalCounter(this.getLocalGoalCounter() + 1);
     }
 }
