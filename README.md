@@ -20,13 +20,13 @@
 ## TODO Torneo DV
 - [x] Agregar estructura de clase de Player
 - [x] Agregar estructura de clase de Team sin Player
-- [ ] Establecer la relación entre Team y Player
-- [ ] Agregar estructura de clase de Match sin Team
-- [ ] Actualizar estructura de clase Match con Team
-- [ ] Establecer la relación entre Team y Match
-- [ ] Agregar estructura de clase de Season
-- [ ] Establecer la relación entre Team y Season
-- [ ] Establecer la relación entre Season y Match
+- [x] Establecer la relación entre Team y Player
+- [x] Agregar estructura de clase de Match sin Team
+- [x] Actualizar estructura de clase Match con Team
+- [x] Establecer la relación entre Team y Match
+- [x] Agregar estructura de clase de Season
+- [x] Establecer la relación entre Team y Season
+- [x] Establecer la relación entre Season y Match
 - [ ] Crear 11 jugadores y asignar a un equipo
 - [ ] Crear 11 jugadores y asignar a un equipo
-- [ ] Crear un match entre dos equipos
+- [x] Crear un match entre dos equipos
