@@ -31,5 +31,6 @@
 - [x] Crear 11 jugadores y asignar a un equipo
 - [x] Crear un match entre dos equipos
 - [x] Agregar nuevos jugadores desde la clase Team
-- [ ] Modificar el resultado del equipo local y visitante
+- [ ] Modificar el resultado del equipo local
+- [ ] Modificar el resultado del equipo visitante
 - [ ] Obtener al equipo que gana el Match
