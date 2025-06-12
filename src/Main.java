@@ -115,6 +115,11 @@ public class Main {
         }
 
         Date partido1 = new Date(125,5, 8);
-        Match match1 = new Match("Monumental",partido1,teams.get(0),teams.get(1),2,3);
+        Match match1 = new Match("Monumental",partido1,teams.get(0),teams.get(1));
+        match1.setLocalGoalCounter(0);
+        match1.setVisitantGoalCounter(0);
+        match1.localMakeGoal();
+        match1.localMakeGoal();
+        match1.localMakeGoal();
     }
 }
